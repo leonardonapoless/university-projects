@@ -1,0 +1,27 @@
+var {
+    - cidades[20]
+    - distanciaBH[]
+
+}
+
+input {
+
+    20x max.{
+    - nome cidades (ate 20) (flag = fim) (obrig.)
+    - distancias (min. 500km)
+    }
+
+    do{{
+
+    - nome cidade (flag = sair)
+
+    }
+
+        math / output {
+
+        - preço passagem --> dist * 0.25
+        - tempo voo em minutos --> t=d/v*60
+        - num. escalas --> t/180
+
+        }
+        }} while

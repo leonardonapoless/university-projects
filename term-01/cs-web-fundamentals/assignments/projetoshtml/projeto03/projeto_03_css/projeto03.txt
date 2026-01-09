@@ -1,0 +1,11 @@
+O QUE É O CSS?
+
+CSS ou Folha de Estilo em Cascata é usado para estilizar os elementos da página HTML. O CSS faz a decoração da página, tornando-a mais amigável para o usuário final. Com o CSS é possível alterar a cor do texto, a cor de fundo da página, o espaçamento entre os parágrafos, etc. Além disso o CSS permite decorar elementos como tabelas, grids, entre outros. 
+
+QUEM DESENVOLVEU O CSS
+
+O CSS é uma tecnologia desenvolvida pela W3C (World Wide Web Consortium) em 1996. CSS é uma linguagem de estilo e não uma linguagem de programação como JavaScript ou PHP e é de fácil aprendizado. Há uma forte relação entre a linguagem HTML e o CSS. O HTML é uma linguagem de marcação, e é a base dos sites da WEB, o CSS é focado na estética de um site.
+
+LINKS EXTERNOS
+
+Os links eternos (ou PERMALINKS, em inglês) são úteis e amigáveis para os mecanismos de busca SEO (Search Engine Optimization), usando permalinks o desenvolvedor aumenta a relevância da página para buscas relacionadas, melhorando também a experiência do usuário e o desempenho nos mecanismos de busca. URLs permanentes bem planejadas, torna-se mais fácil gerenciar e atualizar conteúdo sem precisar alterar links existentes, sem contar que, evita problemas de redirecionamento e links quebrados ao reorganizar a estrutura do site.

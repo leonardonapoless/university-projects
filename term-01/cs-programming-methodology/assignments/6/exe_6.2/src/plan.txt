@@ -1,0 +1,41 @@
+var {
+
+    array {
+        - jogador[][]
+        - jogos
+        - time 1 vencedor
+        - empate
+        - time 2 vencedor
+
+
+    }
+
+
+
+}
+
+
+input {
+
+
+
+
+
+}
+
+math {
+
+
+
+
+
+
+}
+
+
+output {
+
+
+
+
+}

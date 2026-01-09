@@ -1,0 +1,119 @@
+// Leonardo Napoles
+
+import java.util.*;
+
+public class Exe_4_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int codigoOperario;
+        char classeOperario;
+        int numPecas;
+
+        double salarioOperario;
+        double totalSalarios = 0;
+        int totalPecas = 0;
+
+        int codigoMenorProducao = 0;
+        int menorNumPecas = 2147483;
+
+        int totalOperariosB = 0;
+        int totalPecasB = 0;
+        double mediaPecasB = 0;
+
+        System.out.println("Calculo de Salarios da Fabrica");
+
+        do {
+
+            System.out.print("Digite o codigo do operario (0 para sair): ");
+            codigoOperario = sc.nextInt();
+
+
+            if (codigoOperario == 0) {
+                break;
+            }
+
+
+            do {
+                System.out.print("Digite a classe do operario (A, B ou C): ");
+                classeOperario = Character.toUpperCase(sc.next().charAt(0));
+
+                if (classeOperario != 'A' && classeOperario != 'B' && classeOperario != 'C') {
+                    System.out.println("Classe invalida! Digite A, B ou C.");
+                }
+            } while (classeOperario != 'A' && classeOperario != 'B' && classeOperario != 'C');
+
+
+            do {
+                System.out.print("Digite o numero de pecas fabricadas: ");
+                numPecas = sc.nextInt();
+
+                if (numPecas <= 0) {
+                    System.out.println("Numero de pecas invalido! Digite um valor maior que zero.");
+                }
+            } while (numPecas <= 0);
+
+
+            salarioOperario = 0;
+
+            if (classeOperario == 'A') {
+                if (numPecas <= 30) {
+                    salarioOperario = 500 + (numPecas * 2.0);
+                } else if (numPecas <= 40) {
+                    salarioOperario = 500 + (numPecas * 2.3);
+                } else {
+                    salarioOperario = 500 + (numPecas * 2.8);
+                }
+            } else if (classeOperario == 'B') {
+                salarioOperario = 1200.0;
+                totalOperariosB++;
+                totalPecasB += numPecas;
+            } else {
+                if (numPecas <= 50) {
+                    salarioOperario = numPecas * 40.0;
+                } else {
+                    salarioOperario = numPecas * 45.0;
+                }
+            }
+
+
+            totalSalarios += salarioOperario;
+            totalPecas += numPecas;
+
+
+            if (numPecas < menorNumPecas) {
+                menorNumPecas = numPecas;
+                codigoMenorProducao = codigoOperario;
+            }
+
+
+            System.out.println("\nSalario do operario: R$" + salarioOperario +
+                    "\nCodigo do operario: " + codigoOperario + "\n");
+
+        } while (true);
+
+
+        if (totalOperariosB > 0) {
+            mediaPecasB = (double) totalPecasB / totalOperariosB;
+        }
+
+
+        System.out.println("\n===== RESULTADOS FINAIS =====");
+        System.out.println("Total gasto com salarios: R$" + totalSalarios);
+        System.out.println("Numero total de pecas fabricadas: " + totalPecas);
+
+        if (codigoMenorProducao != 0) {
+            System.out.println("Codigo do operario que fabricou o menor numero de pecas: " + codigoMenorProducao);
+            System.out.println("Menor numero de pecas fabricadas: " + menorNumPecas);
+        } else {
+            System.out.println("Nenhum operario foi registrado.");
+        }
+
+        if (totalOperariosB > 0) {
+            System.out.println("Media de pecas fabricadas por operarios da classe B: \n" + mediaPecasB);
+        } else {
+            System.out.println("Nao ha operarios da classe B registrados.");
+        }
+
+    }
+}

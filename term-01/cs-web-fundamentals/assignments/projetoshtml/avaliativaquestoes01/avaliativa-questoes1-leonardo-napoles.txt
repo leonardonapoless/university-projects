@@ -1,0 +1,60 @@
+Aluno: Leonardo Nápoles
+
+1 - D - registro.br
+
+2 - É um servidos que hospeda vários sites e compartilha os recursos do servidor entre eles.
+
+3 - HostGator e Bluehost.
+
+4 - URI: usado para localizar um recurso na web. URL: é um meio para acessar o recurso, 
+    a url possui protocolo, nome de dominio e caminho.
+
+5 - D - HTML, CSS, JavaScript.
+
+6 - JavaScript, HTML, CSS.
+
+7 - JavaScript, PHP, Java, Python, c#.
+
+8 - Responsividade refere-se a sites que se ajustam automaticamente de acordo com o tamanho
+    da tela do usuário.
+
+9 - Projetos web que são Mobile-first tem como prioridade a otimização da experiência do usuário
+    começando de dispositivos de telas menores e posteriormente telas maiores.
+
+10 - A - User Experience (UX).
+
+11 - A - SEO On-Page.
+
+12 - Link Building.
+
+13 - C - SERP.
+
+14 - Search Engine Page Result é uma pagina de resultados de uma busca a partir de uma palavra chave,
+    que mostra resultados de acordo com a relevancia do conteudo em relação a consulta e pode ter links
+    patrocinados na página.
+
+15 - E - ctrl + f5.
+
+16 - C = Add folder to workspace.
+
+17 - B - New Folder.
+
+18 - A - New File.
+
+19 - A.
+
+20 - E.
+
+21 - A.
+
+22 - O comando text-align: center; centralizado o conteudo.
+
+23 - D.
+
+24 - a.
+
+25 - C.
+
+26 - E.
+
+27 - C.

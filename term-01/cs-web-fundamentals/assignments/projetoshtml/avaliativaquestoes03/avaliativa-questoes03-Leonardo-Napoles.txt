@@ -1,0 +1,39 @@
+Aluno: Leonardo Nápoles Silva Borba
+
+
+61 - f
+62 - a
+63 = e
+64 - b
+65 - d
+66 - c
+67 - cria uma variavel para o tempo
+68 - alert mostra uma mensagem de alerta na pagina, console.log mostra o output no console.
+69 - e
+70 - a
+71 - c
+72 - e
+73 - c
+74 - e 
+75 - e
+76 - d
+77 - c
+78 - a
+79 - b
+80 - g
+81 - definir a fonte e cor usada na classe.
+82 - definir a cor de fundo e alinhar o conteudo.
+83 - define a referencia do link de navegação ,é usado para criar espaço entre elementos sem que eles sejam quebrados.
+84 - definir a largura maxima que a classe "box" pode ocupar na pagina.
+85 - a
+86 - d
+87 - b
+88 - alt: descrição do conteudo da imagem. src: o caminho de diretorio da imagem. title: fornece descrição da imagem 
+    quando o cursor do mouse está sobre a imagem.
+
+89 - b
+90 - estilizar paginas web.
+91 - b
+92 - d
+93 - na A se alguma fonte não estiver disponivel, ela pode ser substituida por outra, enquanto na B isso não seria possivel.
+94 - c

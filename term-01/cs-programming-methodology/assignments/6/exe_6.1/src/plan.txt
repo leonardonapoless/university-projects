@@ -1,0 +1,52 @@
+var -
+
+        assentoPassageiro (fileira (validação: 1 a 20), cadeira (validação: 1 a 6) [][] matriz) {
+            flag
+        }
+
+        nomePassageiro
+
+        assento1aClasse
+
+        assentoClasseExe
+
+        assentoClasseCom
+
+        valorPass
+
+        contPassageiro
+
+input/logic -
+
+        for {
+             while {
+                -- fileira do assento
+             }
+
+             while {
+                -- cadeira
+             }
+
+             while {
+                -- nome do passageiro.
+             }
+
+        }
+
+        -- calculo valor da passagem
+
+        -- somar o valor dos assentos de todos os passageiros
+
+        -- somar o valor de todos os assentos da 1ª classe
+
+        -- numero de assentos vagos nas janelas (cadeiras 1 e 6)
+
+output -
+
+        -- mapa dos assentos com o nome de cada passageiro no assento
+
+        -- numero de assentos vagos nas janelas (cadeiras 1 e 6)
+
+        -- total faturado na 1ª classe (somar o valor de todos os assentos da 1ª classe)
+
+        -- total faturado no voo

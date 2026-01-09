@@ -1,0 +1,61 @@
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgba(128, 128, 128, 1);
+    color: #fff;
+    font-family: Arial;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+}
+
+p {
+    /* fontes */
+    font-family: arial;
+    font-size: 1.6rem;
+    text-align: justify;
+    
+    /* cores e sombra */
+    background-color: #87ceeb;
+    box-shadow: 8px 8px #808080;
+
+    /* dimensionamento e preenchimento dos elementos do bloco */
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1, h2 {
+    font-family: arial;
+    text-align: left;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    text-shadow: 2px 2px #d3d3d3;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+.separador {
+    padding: 10px;
+}

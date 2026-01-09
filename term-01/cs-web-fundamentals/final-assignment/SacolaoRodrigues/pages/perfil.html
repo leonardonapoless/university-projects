@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/cursor.css" media="(hover: hover) and (pointer: fine)" />
+    <link rel="icon" href="/icon/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="/components/js/headerComponent.js" defer></script>
+    <script type="module" src="/components/js/footerComponent.js" defer></script>
+    <script>
+        (function() {
+            var shouldLoadCursor = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+            if (shouldLoadCursor) {
+                var s = document.createElement('script');
+                s.src = '/js/cursor.js';
+                s.defer = true;
+                document.head.appendChild(s);
+            }
+        })();
+    </script>
+    <script src="../js/perfil.js" defer></script>
+</head>
+
+<body> 
+
+    <header-component variant="perfil"></header-component>
+
+    <main class="profile-container">
+        <div class="main-content">
+            <section class="user-actions">
+                <button onclick="window.location.href = 'listas.html'" class="action-btn">
+                    <div id="list-lottie-perfil" style="width: 40px; height: 40px;"></div>
+                    <span>Minhas Listas</span>
+                </button>
+                <button onclick="window.location.href = 'ofertas.html'" class="action-btn">
+                    <div id="ofertas-lottie-perfil" style="width: 40px; height: 40px;"></div>
+                    <span>Minhas Ofertas</span>
+                </button>
+                <button class="action-btn" id="editarBtn">
+                    <div id="editar-lottie-perfil" style="width: 40px; height: 40px;"></div>
+                    <span>Editar Perfil</span>
+                </button>
+
+                <button onclick="window.location.href = 'ajustes.html'" class="action-btn" id="ajustesBtn">
+                    <div id="ajustes-lottie-perfil" style="width: 40px; height: 40px;"></div>
+                    <span>Ajustes</span>
+                </button>
+                <button class="action-btn" id="logoutBtn">
+                    <div id="logout-lottie-perfil" style="width: 40px; height: 40px;"></div>
+                    <span>Sair</span>
+                </button>
+            </section>
+
+            <section class="recent-orders">
+                <h3>Últimos Pedidos</h3>
+                <div id="lista-pedidos-recentes">
+                    <p>Carregando seus últimos pedidos...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="separador-footer"></div>
+    <footer-component></footer-component>
+</body>
+
+</html>

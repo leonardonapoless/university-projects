@@ -1,0 +1,160 @@
+<!--
+Aluno: Leonardo Nápoles
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale1.0">
+    <title>avaliativapratica2</title>
+
+    <style>
+        *{
+            margin: 10px;
+            border: 10px;
+            padding: 10px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: #4169E1;
+        }
+
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            text-align: justify;
+            background-color: #808080;
+            color: #fff;
+            border-radius: 30px;
+        }
+
+        .dados{
+            font-family: Arial, Helvetica, sans-serif;
+            
+            
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+
+        footer{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            background-color: #808080;
+            color: #fff;
+            border-radius: 30px;
+    
+        }
+
+        button{
+            border-radius: 30px;
+        }
+    </style>
+
+    
+    <script>
+        var matricula = prompt("Informe a matrícula: ");
+        var nome = prompt("Informe o nome: ");
+        var sobrenome = prompt("Informe o sobrenome: ");
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <p class="dados">
+            <br>
+            <script>
+                document.write("Matrícula: " + matricula + " / ")
+                document.write("Nome Completo: " + nome + " " + sobrenome);
+            </script>
+        </p>
+
+    </header>
+
+    <h1><strong>JAVA SCRIPT</strong></h1>
+
+    <p>JavaScript é uma linguagem de programação de alto nível, criada em 1995 por Brendan Eich, um funcionário da
+        Netscape, empresa que criou um dos primeiros navegadores da web. É uma linguagem interpretada e baseada em
+        eventos,
+        amplamente usada para desenvolvimento web. Inicialmente criada para tornar páginas da web interativas e para
+        fazer
+        validações no lado cliente (front-end). Atualmente é usada em diversas áreas, incluindo servidores, aplicativos
+        móveis, jogos e até inteligência artificial.</p>
+
+    <h2>CARACTERÍSTICAS</h2>
+
+    <p>São caracaterística dessa linguagem: multiparadigma, pois suporta programação funcional, orientada a objetos e
+        baseada em eventos; interpretada, o código JavaScript é executado diretamente pelo navegador (o runtime), ou por
+        um
+        ambiente como o Node.js, sem necessidade de compilação. dinamicamente tipada, as variáveis podem armazenar
+        diferentes tipos de dados sem necessidade de declaração explícita e juntamente com HTML e CSS, é uma das
+        principais
+        tecnologias da web.</p>
+
+    <h2>VERSÕES</h2>
+
+    <p>O JavaScript está em evolução, sua última versão é o ECMAScript 13 (ES13) de 2022, nessa versão aconteceram
+        melhorias no acesso a índices de arrays e alterações relaionadas ao Node.js. A versão ECMAScript 3 de 1999,
+        trouxe
+        suporte a tratamento de erros (try/catch) e manipulação de strings, a versão de ECMAScript 5 (ES5) de 2009
+        deu suporte para JSON nativo, introdução dos métodos como forEach(), map(), filter(), reduce() e melhorias de
+        segurança e desempenho. Houve uma grande atualização em 2015, o ECMAScript 6, nessa versão foram introduzidos o
+        comando let e const para declarar variáveis, classes e módulos (import/export) para organização do código, entre
+        outras. Muitas versões vieram depois, como:ECMAScript 7 em 2016, ECMAScript 8 em 2017, ECMAScript 9 em 2018,
+        ECMAScript 10 em 2019, ECMAScript 11 em 2020 e ECMAScript 12 em 2021.</p>
+
+
+        <script>
+            
+            function mensagem(){
+                const tempo = new Date();
+            var tracejado = "--------------------";
+
+            alert("Mensagem do site: \n" + 
+            tracejado + 
+            "\nProgramador: " +  "Fulano Silva \n" +          
+            "Designer: " + "Sicrano Alves \n" + 
+            "Copywriter: " + "Beltrano Zanábio \n" +     
+            "Data....: " + tempo.toLocaleDateString('pt-BR') + " \n"+
+            tracejado + 
+            "\nDados do Usuário: \n" +
+            "Matrícula: ( " + matricula + " ). " + 
+            "Nome Completo: " + nome + " " + sobrenome
+            );
+            }
+        </script>
+
+    <button title="Sobre a página" name="btn_close" value="ok"
+        type="button" onclick="mensagem()">Sobre a página
+
+       
+    </button>
+
+    
+
+
+    <footer>
+        <nav>
+            <p>Para mais informações acesse: <a href="https://www.w3schools.com/js/">JavaScript Tutorial</a></p>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>

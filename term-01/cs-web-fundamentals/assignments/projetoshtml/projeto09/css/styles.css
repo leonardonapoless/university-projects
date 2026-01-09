@@ -1,0 +1,56 @@
+* {
+    border: 0px;
+    padding: 2px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header, footer {
+    padding: 10px;
+    background-color: #d3d3d3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 5px solid #a1a1a1;
+    border-style: groove;
+}
+
+.info {
+    font-family: arial;
+    font-size: 1.6rem;
+    text-align: justify;
+} 
+
+h1, h2 {
+    font-family: arial;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#grid-secao {
+    margin: 10px;
+    background-color: #a52a2a;
+    color: #fff;
+    text-align: center;
+}
+
+.grid div {
+    background-color: #ff4500;
+    font-family: arial;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3px;
+    text-align: center;
+}

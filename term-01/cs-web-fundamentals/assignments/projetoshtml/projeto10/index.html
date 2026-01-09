@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <section class="secao">
+        <h1>Byta Bug Informática</h1>
+
+        <p>Visando proporcionar o melhor para o desenvolvimento pessoal e profissional de nossos funcionários do setor
+            de
+            TI, A Byta Bug Informática, a maior empresa do setor de TI, tem a alegria de fornecer a seus funcionários
+            cursos de
+            aperfeiçoamento profissional.Preencha os dados a seguir e em seguida confirme o envio. O treinamento será
+            custeado em 80% pela empresa, não perca essa oportunidade. Aguarde, daremos o retorno o mais rápido
+            possível.
+        </p>
+        <form id="form" action="#" method="get">
+            <h2>Dados do aluno</h2>
+
+            <p>
+                <label for="matricula">Matricula</label><br>
+                <input type="text" name="matricula" id="matricula" placeholder="informe a matricula" size="10">
+            </p>
+
+            <p>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="informe o nome" size="20">
+            </p>
+
+            <p>
+                <label for="fone">Telefone</label><br>
+                <input type="text" name="fone" id="fone" placeholder="informe o telefone">
+
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="text" name="email" id="email" placeholder="Informe o email">
+            </p>
+
+
+            <p>
+
+                <label class="labelcheckbox" for="curso">Escolha o curso</label><br>
+                <label class="aviso" for="curso">(Máximo 3 cursos)</label><br>
+
+                <input type="checkbox" id="uml" name="curso" value="UML">
+                <label for="uml">treinamento UML</label><br>
+
+                <input type="checkbox" id="testes" name="curso" value="TESTES">
+                <label for="testes">Treinamento testes</label><br>
+
+                <input type="checkbox" id="html" name="curso" value="html">
+                <label for="html">Treinamento HMTL</label><br>
+
+                <input type="checkbox" id="js" name="curso" value="JS">
+                <label for="js">Treinamento Javascript</label><br>
+
+                <input type="checkbox" id="devops" name="curso" value="DEVOPS">
+                <label for="devops">Treinamento Devops</label><br>
+            </p>
+
+            <p>
+                <label for="local">Escolha o local</label><br><br>
+
+                <select id="local" name="local">
+                    <option value="0">Selecione o local:</option>
+                    <option value="CENTRO">Centro</option>
+                    <option value="FUNCIONARIOS">Funcionários</option>
+                    <option value="STAEFIGENIA">Sta Efigênia</option>
+                    <option value="SAVASSI">Savassi</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="radio">Escolha o tipo de pagamento</label><br><br>
+
+                <input type="radio" id="pix" name="tipopg" value="PIX">
+                <label for="pix">PIX</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="DEBITO">
+                <label for="debito">Debito</label><br>
+
+                <input type="radio" id="dinheiro" name="tipopg" value="DINHEIRO">
+                <label for="dinheiro">Dinheiro/Espécie</label><br>
+
+                <input type="radio" id="credito" name="tipopg" value="CREDITO">
+                <label for="credito">Crédito</label>
+            </p>
+
+            <p>
+                <label for="">Informe a sua formação básica</label><br><br>
+                <textarea class="conhecimento" name="conhecimento" id="conhecimento" cols="20" rows="5"
+                    title="Informe seu conhecimento (opcional), máximo 5 linhas"></textarea>
+            </p>
+
+            <p>
+                <label>Confirme ou altere a data do seu cadastro:</label><br>
+                <input type="date" id="datacadastro"><br>
+            </p>
+
+            <script>
+                const hoje = new Date();
+                const formatoISO = hoje.toISOString().split('T')[0];
+                document.getElementById('datacadastro').value = formato;
+                // O metodo toISOString() retorna um objeto de data como uma string, usando
+                // o padrão ISO. Usado para o caso do componente input type="date".
+            </script>
+
+            <p>
+                <input type="reset" value="Cancelar" title="Limpar dados">
+                <input type="submit" value="Confirmar" title="Enviar dados">
+            </p>
+        </form>
+
+        <div class="separador"></div>
+        <section class="rodape">
+            <footer>
+                <p>
+                    <a href="https://w3schools.com/html/html_forms.asp" target="_blank" alt="">
+                        Mais sobre forms clique aqui
+                    </a>
+                </p>
+
+        
+            </footer>
+        </section>
+    </section>
+</body>
+
+</html>

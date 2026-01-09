@@ -1,0 +1,431 @@
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes subtlePulse {
+    0% {
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 10px rgba(76, 175, 80, 0.7);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    }
+}
+
+body {
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 18px;
+    background-color: #f1f0d9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.sidebar-header .logo {
+    display: block;
+    max-width: 400px;
+    height: auto;
+    padding: 200px 0 0 200px;
+    margin: 2rem auto;
+    text-decoration: none;
+}
+
+.sidebar-header .logo img {
+    width: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+.content-area {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 50px;
+    padding-top: 8rem;
+    padding-left: 2rem;
+    overflow-y: auto;
+}
+
+.container {
+    background-color: #f8f8f8;
+    padding: 25px 45px;
+    border-radius: 25px;
+
+    box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+    border: 3px solid #000;
+    width: 100%;
+    max-width: 480px;
+
+    animation: fadeIn 1s ease-out 0.3s backwards;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+ 
+    color: black;
+    border-radius: 30px;
+    font-family: "Jetbrains Mono", monospace;
+    white-space: nowrap;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.95em;
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 18px 22px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    margin-left: -6px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #000;
+
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-family: "Jetbrains Mono", monospace;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group input::placeholder {
+    color: #666;
+    font-style: italic;
+}
+
+.form-group input:hover,
+.form-group select:hover {
+    background-color: #f0f0f0;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+}
+
+.form-group .error-message {
+    color: #e57373;
+    font-size: 0.8em;
+    margin-top: 6px;
+    display: block;
+    height: 1em;
+}
+
+.form-group input.invalid {
+    border-color: #e57373;
+}
+
+.submit-btn {
+    background-color: #d6a9a1;
+    color: #000;
+    padding: 18px 30px;
+    border: 3px solid #000;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.15em;
+    width: 100%;
+
+    transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.submit-btn:hover {
+    background-color: #c9938b;
+    color: #fff;
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 2px 4px 8px 1px rgba(0, 0, 0, 0.2), 0px 2px 0px 1px #000;
+}
+
+.submit-btn:active {
+    transform: translateY(0px) scale(0.995);
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.15), 0px 1px 0px 1px #000;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.form-message {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-family: "Jetbrains Mono", monospace;
+}
+
+.form-message.success {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    border: 1px solid #c8e6c9;
+}
+
+.form-message.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .main-layout {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .sidebar-header {
+        grid-row: 1;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        min-height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sidebar-header .logo {
+        width: 250px;
+        height: auto;
+        margin: 10px auto;
+        padding: 0;
+        display: block;
+    }
+
+    .content-area {
+        grid-row: 2;
+        padding: 15px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .container {
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 1em;
+        margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 14px 16px;
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    .submit-btn {
+        padding: 14px 20px;
+        font-size: 1.1em;
+        margin-top: 8px;
+    }
+
+    .login-link {
+        font-size: 0.9em;
+        margin-top: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+    
+    .main-layout {
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+    
+    .sidebar-header {
+        padding: 5px;
+    }
+    
+    .sidebar-header .logo {
+        width: 200px;
+        height: auto;
+        margin: 5px auto;
+    }
+    
+    .content-area {
+        padding: 10px;
+    }
+    
+    .container {
+        margin: 0 auto;
+        padding: 18px;
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+        margin-bottom: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        font-size: 0.95em;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 12px 14px;
+        font-size: 0.95em;
+    }
+
+    .submit-btn {
+        padding: 12px 16px;
+        font-size: 1em;
+        margin-top: 6px;
+    }
+
+    .login-link {
+        font-size: 0.85em;
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 13px;
+    }
+    
+    .main-layout {
+        padding: 0.25rem;
+        gap: 0.25rem;
+    }
+    
+    .sidebar-header .logo {
+        width: 180px;
+    }
+    
+    .content-area {
+        padding: 8px;
+    }
+    
+    .container {
+        padding: 15px;
+        max-width: 300px;
+    }
+    
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 14px;
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+
+    .submit-btn {
+        padding: 10px 14px;
+        font-size: 0.95em;
+    }
+
+    .login-link {
+        font-size: 0.8em;
+        margin-top: 14px;
+    }
+}

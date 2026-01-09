@@ -1,0 +1,14 @@
+As unidades relativas "em" e "rem"
+
+A unidade em
+
+O "em" usa para o cálculo do tamanho da fonte o elemento pai, criando uma hierarquia no cálculo, para tornar responsivo a visualização (aumentar ou diminuir a fonte). Quando há a redução da fonte em apps (por exemplo) pode ocorrer problema de acessibilidade, ou seja, dificuldades de visualização de letras pequenas.
+
+A unidade rem
+
+Basicamente usamos "rem" para deixar mais fácil o trabalho, no caso de deixar o projeto responsivo, em outras palavras, para adaptar a fonte para vários tamanhos de telas. Usando "rem" teremos sempre o tamanho da fonte responsiva independente se for navegador ou um app. Por exemplo: No Browser 16 pixels, no app também 16 pixels.
+
+Outras Unidades
+
+A unidade "%" ou Porcentagem, é usada para auxiliar o entendimento das dimensões (altura e largura) ou área ocupada, faz a conversão responsiva. A unidade absoluta "pt" ou Ponto (1 pt é o mesmo que 1/72 de polegada). Também usado para entender visualmente a altura da linha em pontos. A unidade pixel ou "px" é muito usada e corresponde a um ponto na tela do computador, é usado para entender visualmente a altura da linha em pixels. Uma última unidade a discutir é a unidade fração ou "fr" ela representa um fragmento do espaço disponível em um container de um grid. Uma observação importante é que alguns autores consideram a unidade px (pixel) como relativa, pois o tamanho deste corresponderá à resolução ou dispositivo usado. Outros autores consideram o px uma unidade absoluta, o pixel significa picture element (elemento de imagem/figura), ou seja, o píxel é o menor elemento em um dispositivo de exibição.
+

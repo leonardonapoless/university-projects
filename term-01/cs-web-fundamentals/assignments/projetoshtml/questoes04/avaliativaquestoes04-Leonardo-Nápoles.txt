@@ -1,0 +1,23 @@
+Aluno: Leonardo Nápoles
+
+95 - target, _blank.
+96 - post.
+97 - class.
+98 - placeholder.
+99 - <label>
+100 - A função do botão type="reset" é restaurar todos os campos do formulário para seus valores iniciais.
+101 - (e) textarea
+102 - enviar os dados do formulário para o destino especificado no atributo action do formulário.
+103 - (b) hover.
+104 - (d) Sua opção aqui 4 linhas e 3 colunas.
+105 - (d) DOM.
+106 - (e) interpolação de variaveis.
+107 - (a) document.getElementById().
+108 - (b) innerHMTL.
+109 - (c) nbsp.
+110 - resultado: B,U,D,A,P,E,S,T,E.
+111 - ["T", "U", "D", "A", "E", "P", "", "", "", "B"]
+112 - document.getElementById("resultado").textContent = vetor;
+113 - div { font-family: sans-serif; font-size: 50px;}
+114 - Não é correto afirmar que JavaScript é exclusivamente interpretada. engines modernas JavaScript utilizam compilação Just-In-Time (JIT), que compila o código para bytecode ou código de máquina durante a execução, otimizando a performance. Assim, combina características de interpretação e compilação.
+115 - linhas: 27, 28, 29, 20.

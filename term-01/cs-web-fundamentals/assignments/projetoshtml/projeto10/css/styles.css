@@ -1,0 +1,83 @@
+* {
+    border: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.info {
+    padding-top: 0px;
+    font-family: Arial;
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+h1 {
+    font-family: arial;
+    font-size: 2.2rem;
+}
+
+.secao {
+    background-color: #d3d3d3;
+    box-shadow: 10px 10px #808080;
+    padding: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+h2 {
+    font-family: arial;
+    font-size: 1.8rem;
+    padding-bottom: 0px;
+}
+
+#form {
+    font-family: arial;
+    font-size: 1.6rem;
+}
+
+.labelcheckbox {
+    font-family: arial;
+    font-size: 1.8rem;
+}
+
+.aviso {
+    font-family: arial;
+    font-size: 1.0rem;
+}
+
+.separador {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.secao, .rodape {
+    background-color: #d3d3d3;
+    box-shadow: 10px 10px #808080;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rodape {
+    font-family: arial;
+    font-size: 1.5rem;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.5);
+}
+

@@ -1,0 +1,55 @@
+body {
+    background-color:black;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+pre{
+    color: white;
+}
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 10px;
+}
+img {
+    width: 35%;
+    height: 35%;
+    animation: bounce 
+    2s 
+    ease-out 1s infinite;
+}
+
+@keyframes bounce {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 35%;
+    }
+
+    
+}
+
+figure {
+    text-align: center;
+    
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e89161;
+}
+
