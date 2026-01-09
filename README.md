@@ -47,7 +47,7 @@
 <em>(Programação Orientada a Objetos)</em><br>
 Core pillars of OOP (Encapsulation, Inheritance, Polymorphism, Abstraction), interface design, exception handling, and the Java Collections Framework.
 <br>
-<code>java</code> <code>software-architecture</code> <code>java</code>
+<code>java</code> <code>software-architecture</code>
 </blockquote>
 </details>
 
