@@ -151,7 +151,7 @@ Introduction to the engineering of computer applications, focusing on clean code
 <summary><strong>Computer Organization & Architecture</strong></summary>
 <blockquote>
 <em>(Arquitetura de Computadores)</em><br>
-Von Neumann architecture, instruction sets, memory hierarchy, and assembly language basics.
+Von Neumann architecture, instruction sets, and memory hierarchy.
 <br>
 <code>hardware</code> <code>low-level</code>
 </blockquote>
