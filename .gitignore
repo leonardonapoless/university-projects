@@ -1,0 +1,81 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# Eclipse 
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+.settings/
+.loadpath
+.project
+.classpath
+
+# Java
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven & Gradle (Build Tools)
+target/
+build/
+.gradle/
+!gradle-wrapper.jar
+
+# Web (Node, Angular, TypeScript)
+node_modules/
+dist/
+out-tsc/
+bazel-out/
+test-results/
+.angular/
+.sass-cache/
+npm-debug.log
+yarn-error.log
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# C / C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.app
+
+# Bun Local Cache
+.bun/
+
+# Bun debug logs
+bun.debug

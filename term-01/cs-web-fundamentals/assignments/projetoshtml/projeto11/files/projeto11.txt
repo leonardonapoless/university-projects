@@ -1,0 +1,38 @@
+ÍNDICE TIOBE
+Linguagens mais usadas (Abril de 2025)
+Segundo TIOBE, em 2025, o mundo das linguagens de programação já se encontra em fase de consolidação. As 20 principais linguagens usadas ao redor do mundo correspondem atualmente 83,56% do mercado total, segundo TIOBE, um número muito alto, isso porque o mercado está na defensiva, ou seja, está voltado mais para tecnologias que ganharam solidez ao longo dos anos.
+
+Classificação	Nome			Percentual
+1		Python A			23.08%
+2		C++			10.33%
+3		C			9.94%
+4		Java			9.63%
+5		C#			4.39%
+6		JavaScript			3.71%
+7		Go			3.02%
+8		Visual Basic		2.94%
+9		Delphi/Object Pascal	2.53%
+10		SQL			2.19%
+11		Fortran			2.04%
+12		Scratch			1.35%
+13		PHP			1.31%
+14		R			1.19%
+15		Ada			1.09%
+16		MATLAB			1.07%
+17		Assembly language		0.97%
+18		Rust			0.96%
+19		Perl			0.91%
+20		COBOL			0.91%
+
+SOBRE A TIOBE
+
+A TIOBE é uma organização voltada para a qualidade de software. A TIOBE é responsável em verificar mais de 1 bilhão de linhas de código de software diários para seus clientes ao redor do mundo. A TIOBE foi fundada em 1º de outubro de 2000 por Paul Jansen. O nome TIOBE significa The Importance Of Being Earnest, "A Importância de Ser Sincero". Esta frase é também é o nome de uma peça escrita por Oscar Wilde no final do século XIX.
+
+Click aqui para acessar TIOBE Index: TIOBE Index
+
+Link a ser usado: https://www.tiobe.com/tiobe-index/
+
+
+
+
+

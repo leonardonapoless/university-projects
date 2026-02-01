@@ -1,0 +1,18 @@
+/* html{
+    font-size: 62.5px;
+} */
+
+.formato{
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 2.5);    
+    background-color: #d5d5d5;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}

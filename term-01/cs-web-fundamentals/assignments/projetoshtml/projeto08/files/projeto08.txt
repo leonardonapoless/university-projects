@@ -1,0 +1,16 @@
+FIXANDO O HEADER
+
+Esse recurso é usado para fixar as informações do header durante o scroll da tela. Normalmente é usado para manter uma informação importante no topo da página enquanto o usuário pesquisa outros assuntos da página. O cabeçalho fixo na página HTML é uma ferramenta de navegação que proporciona uma melhor experiência do usuário, (ou seja, a UX  User Experience). A UX é como um o usuário interage e experimenta o site, isso Inclui as percepções sensoriais e de utilidade, facilidade de uso e eficiência, uma vez que, o cabeçalho do site (onde estão elementos como: menu, caixa localizar etc.) permanecem fixo na parte superior da página enquanto o usuário aciona o Scroll (rolamento da tela) para cima e para baixo. Em resumo, o cabeçalho e a navegação do site estão sempre no topo da página. Outros recursos podem ser acrescentados a este, dentre eles, o recurso de transparência do bloco header. Veremos esse recurso posteriormente.
+
+BOTÕES
+
+Os botões HTML são elementos usados com a função de invocar alguma ação na página, como o fechamento da mesma, a execução de um processamento ou simplesmente pra mostrar uma mensagem qualquer. Para usa um botão no formulário, usa-se a tag "button". Os botões são muito usados em formulários também. Os botões podem ser configurados, como a inclusão de bordas, cores, e imagens. Para invocar uma ação a um botão usa-se o parâmetro "onclick" que executará um método ou uma função, ao clicar sobre o botão. Além dos botões podemos usar nos formulários os quadros de lista dropdown, listas, radio-buttons, checkbox entre muitos. Todos esses elementos serão abordados no capítulo Formulários.
+
+GRIDS
+
+Trata-se de uma forma de estruturar o layout da página. Os Grids permitem configurar layouts em duas dimensões, ou seja, linhas e colunas. O nome Grid tem origem justamente na junção de linhas e colunas (que formam uma grade ou grid). As grids tem a função de ajustar a proporção dos elementos em uma página HTML. Nas células das grides podem ser inseridas informações textuais, hyperlinks, imagens e animações. Grids são muito usados para a apresentação de uma lista de produtos, porém dispostos em  um formato tabular, onde são inseridos dentro de cada célula a imagem do produto, possibilitando inclusive a navegação no site, através desses elementos, como por exemplo, usando âncoras.
+
+FORMULÁRIOS
+
+O formulário é o principal meio de interação entre o usuário final e a Web. Normalmente os formulário são usados para enviar dados para um servidor Web, mas podem ser usados para uma função específica da própria página. Um formulário HTML é composto de ou vários widgets. Os widgets são elementos de interação com a página, como: botões, quadro de lista dropdown, checkboxes etc. Frequentemente esses elementos são inseridos em conjunto com rótulos (labels) para correta experiência do usuário. Formulários são usados também nas aplicações corporativas, as ferramentas RAD (Rapid Application Development) permitem a criação rápidas desses componentes containers e facilitam a inclusão dos diversos componentes sobre eles.
+

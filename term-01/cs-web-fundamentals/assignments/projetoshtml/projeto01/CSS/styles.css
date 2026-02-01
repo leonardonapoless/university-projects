@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Helvetica;
+    color: antiquewhite;
+    text-align: center;
+}
+
+h2 {
+    font-family: Helvetica;
+    color: antiquewhite;
+    padding: auto;
+    padding-left: 50px;
+}
+
+h3 {
+    font-family: Helvetica;
+    color: whitesmoke;
+    padding: auto;
+    padding-left: 80px;
+}
+
+p {
+    font-family: Helvetica;
+    font-size: large;
+    color: white;
+    padding-right: auto;
+    padding-left: 115px;
+}

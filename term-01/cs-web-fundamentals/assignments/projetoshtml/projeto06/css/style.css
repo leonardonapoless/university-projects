@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5px;
+}
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 10px;
+}
+
+body {
+   background-color: #87ceeb;
+}
+
+img {
+    height: 20%;
+    width: 20%;
+    background-color: #808080;
+}
+
+figure {
+    text-align: center;
+    background-color: #808080;
+}
+
+h1 {
+    border: 1px solid #000;
+    background-color: #808080;
+    font-family: Arial;
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 1.8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.unidadesrelativas {
+    border: 1px solid #000;
+    background-color: #808080;
+    font-family: Arial;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+
+}
+
+.unidaderem, .unidadeem, .outrasunidades {
+    border: 1px solid #000;
+    background-color: #d3d3d3;
+    font-family: Arial;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+}
+
+.rodape {
+    border: 1px solid #000;
+    background-color: #808080;
+    font-family: Arial;
+    font-size: 1.2rem;
+}
+
+.separador {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.voltar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+mensagem{
+    background-color: #000;
+}
+
+.infoadicionais {
+    font-family: Arial;
+    font-size: 2rem;
+}
+
+
+

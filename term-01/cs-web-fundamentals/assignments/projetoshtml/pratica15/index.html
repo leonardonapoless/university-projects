@@ -1,0 +1,325 @@
+<!-- Aluno: Leonardo Nápoles -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Prática 15</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Limelight&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+
+
+    <style>
+        * {
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5px;
+        }
+
+        body {
+            background-color: rgb(242, 233, 221);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 0.6rem;
+            background-color: bisque;
+            width: 16rem;
+            border-radius: 30px;
+            padding: 10px;
+            border: 4px solid #000;
+            box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+        }
+
+        main {
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .inputs {
+            padding: 1rem;
+            background-color: rgb(255, 153, 160);
+            box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+            border-radius: 30px;
+            border: 4px solid #000;
+            width: 100%;
+            max-width: 700px;
+            min-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 0.2rem;
+        }
+
+        .outputs {
+            font-size: 1rem;
+            padding: 1rem;
+            background-color: rgba(188, 188, 255, 0.605);
+            box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+            border-radius: 30px;
+            border: 4px solid #000;
+            width: 100%;
+            max-width: 700px;
+            min-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        input {
+            padding: 0.2rem;
+            border-radius: 25px;
+            font-size: 0.4rem;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+            box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #797878;
+            border: 4px solid #737373;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: rebeccapurple;
+        }
+
+        label {
+            font-size: 0.6rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .calcular {
+            background-color: #000;
+            color: #fff;
+            font-size: 0.5rem;
+            border-radius: 35px;
+            padding: 15px 30px;
+            border: 5px solid rebeccapurple;
+            box-shadow: 3px 7px 12.5px 2px rgba(0, 0, 0, 0.25), 0px 3px 0px 2px #000;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            font-weight: bold;
+        }
+
+        .calcular:hover {
+            animation: floatAnim 3s ease-in-out infinite;
+        }
+
+        .calcular:active {
+            animation: bounceAnim 3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        @keyframes floatAnim {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        @keyframes bounceAnim {
+
+
+            100% {
+                transform: translateY(-10px) scale(1.1);
+            }
+
+            50% {
+                transform: translateY(0) scale(1.05);
+            }
+
+            0% {
+                transform: translateY(8px) scale(1);
+            }
+        }
+
+        .outputs button {
+            text-align: center;
+            /* border: 3px solid #fff; */
+            box-shadow: -2px 6px 2px 2px #dc626e, 0px 3px 0px 2px #000000;
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.6s ease;
+            font-weight: bold;
+            width: 100%;
+            max-width: 160px;
+        }
+
+        .outputs button:hover {
+            background-color: #691620;
+        }
+
+        span {
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.6rem;
+            font-weight: bold;
+            background-color: #f8f9fa;
+            border: 2px solid #dee2e6;
+            min-width: 80px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 0.6rem;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Responsividade */
+
+        @media (max-width: 1280px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .inputs,
+            .outputs {
+                width: 100%;
+                max-width: 320px;
+                min-width: 280px;
+            }
+
+            input {
+                font-size: 0.5rem;
+                padding: 1.2rem;
+            }
+
+            label {
+                font-size: 0.7rem;
+            }
+
+            h3 {
+                font-size: 0.7rem;
+            }
+
+            span {
+                font-size: 0.5rem;
+            }
+
+            .calcular {
+                font-size: 0.6rem;
+                padding: 18px 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h2>Salário líquido e classificação de cartão</h2>
+    </header>
+    <main>
+        <div class="inputs">
+            <div class="input-group">
+                <!-- <label for="salarioBruto"><b>Salário bruto</b>:</label> -->
+                <input type="number" id="salarioBruto" step="100" placeholder="Salário Bruto"
+                    title="Informe um valor inteiro positivo">
+            </div>
+            <div class="input-group">
+                <!-- <label for="descontos">Desconto:</label> -->
+                <input type="number" id="descontos" placeholder="Desconto">
+            </div>
+            <div class="input-group">
+                <!-- <label for="comissao">Comissão:</label> -->
+                <input type="number" id="comissao" placeholder="Comissão">
+            </div>
+            <div class="button-container">
+                <button class="calcular" id="calcular" onclick="calcularSalarioLiquido()">Calcular</button>
+            </div>
+        </div>
+        <div class="outputs">
+            <h3>Salário Líquido: <span id="salarioLiquido">--</span></h3>
+            <h3>Classificação do cartão: <span id="classificacaoCartao">--</span></h3>
+            <button onclick="fechar()">Fechar</button>
+        </div>
+    </main>
+    <script>
+        function calcularSalarioLiquido() {
+            let salarioBruto = parseFloat(document.getElementById('salarioBruto').value) || 0;
+            let descontos = parseFloat(document.getElementById('descontos').value) || 0;
+            let comissao = parseFloat(document.getElementById('comissao').value) || 0;
+            let salarioLiquido = salarioBruto - descontos + comissao;
+            document.getElementById('salarioLiquido').textContent = salarioLiquido.toFixed(2);
+            let classificacao;
+            if (salarioBruto < 0 || descontos < 0 || comissao < 0) {
+                alert("Os valores não podem ser negativos!")
+            } else {
+                if (salarioLiquido >= 2000 && salarioLiquido < 5500) {
+                    classificacao = "Bronze";
+                } else if (salarioLiquido > 5000 && salarioLiquido < 12000) {
+                    classificacao = "Prata";
+                } else if (salarioLiquido > 12000) {
+                    classificacao = "Ouro";
+                } else {
+                    classificacao = "Sem classificação"
+                }
+            }
+            document.getElementById('classificacaoCartao').textContent = classificacao;
+            document.getElementById('classificacaoCartao').style.color = "#9c3912";
+        }
+        function fechar() {
+            alert("O formulário será fechado!")
+            window.close();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+variaveis {
+
+    voo1, voo2, voo3, vooDescLot60, vooDescLot30,
+    vooArrecMaiorValor, passagemMenorValor, mediaArrec3voos;
+
+}
+
+entradas {
+
+    - numero do voo, quantidade de passagens vendidas;
+
+
+calculos {
+
+    - desconto preço passagem lotação
+
+    }
+
+    - num. voo maior val. arrec.
+    - media arrec 3 voos;
+    - val. pass. menor val. + num. voo correspondente;
+
+}
+
+saidas {
+
+- numero do voo que arrecadou o maior valor, e valor arrecadado;
+- media da arrecadação dos 3 voos;
+- o valor da passagem mais barato e o numero do voo correspondente;
+
+}

@@ -1,0 +1,14 @@
+// Variables
+    notaAluno;
+
+
+
+// Data Input
+
+
+
+// Processing
+
+
+
+// Output

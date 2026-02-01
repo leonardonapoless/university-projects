@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale="1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="formato">
+            <h2><b>Soma e multiplica</b></h2>
+
+            <p>
+                <label for="a">Valor A:</label>
+                <input type="number" id="a" placeholder="Digite o valor para A">
+            </p>
+            
+            <p>
+                <label for="a">Valor B:</label>
+                <input type="number" id="b" placeholder="Digite o valor para B">
+            </p>
+            
+            
+            <button onclick="calcular()" title="Calcular a Soma e o produto">
+                Calcular&nbsp&nbsp</button>
+
+            <button onclick="fechar()" title="Fechar essa página">
+                Fechar</button>
+        
+        <div class="resultado" id="resultado"></div>
+
+    </div>
+
+    <script>
+        function calcular(){
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+
+            if(a == "" || b == ""){
+                alert("Impossivel calcular valores nulos")
+                return;
+            }
+
+            if(a <= 0 || b <= 0){
+                alert("Numeros não permitidos")
+                return;
+            }
+
+            let soma = parseInt(a) + parseInt(b);
+            let produto = a * b;
+
+            let resultadoDiv = document.getElementById("resultado");
+            resultadoDiv.innerHTML = `<p><b>Soma: </b>${soma}<br><br>
+                <b>Produto: </b>${produto}</p>`
+        }
+
+        function fechar(){
+            window.close;
+        }
+    </script>
+</body>
+</html>

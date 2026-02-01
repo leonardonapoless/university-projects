@@ -1,0 +1,26 @@
+1 - variaveis
+
+    - numVoo, quantPassagens, precoPass, vlrArrecadado,
+      maiorValorArrecad,
+
+
+2 - entradas
+
+    - num voo (1, 2 ou 3)
+    - quant. passagens (0 a 100)
+
+
+3 - calculos
+
+    - preço passagens
+    - valor arrecadado
+    - maior valor arrecadado
+    - voo do maior valor
+    - somar arrecadações
+    - menor preço passagem
+    - voo do menor preço
+
+4 - saidas
+
+    - preço passagem
+    -

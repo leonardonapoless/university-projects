@@ -1,0 +1,31 @@
+variaveis {
+
+cod. op., classe, num. peças, salario, somaSal, soma numPecas, menor numPecas,
+codOpMenorPecas, somaPecasClasseB, contOpClasseB
+}
+
+entrada de dados {
+
+- cod. op. (int) (flag = 0)
+- classe (A, B ou C)
+- num. peças (> 0)
+}
+
+calculos {
+- salario
+- somar salarios
+- somar num. peças
+- menor num peças
+- op. menor num. peças
+- somar num. peças op. classe B
+- contar op. classe B
+
+]
+
+saida de dados {
+
+- salario
+- total salario
+-
+
+}

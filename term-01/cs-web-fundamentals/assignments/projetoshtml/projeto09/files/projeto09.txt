@@ -1,0 +1,15 @@
+Trabalhando com GRADES
+
+SEÇÕES, GRADES E DIVISÕES
+
+SEÇÕES
+
+As seções são usadas para representar uma parte de um documento HTML, geralmente com um título ("h1", "h2") e contém conteúdos semânticos ou seja, agrupam partes do documento de forma lógica.
+
+GRADES
+
+Usamos as Grids para estruturar o layout da página. O layout de grade CSS apresenta um sistema de grade bidimensional ao CSS. As grades (GRIDS) permitem configurar layouts em duas dimensões, ou seja, linhas e colunas. O nome Grid tem origem justamente na junção de linhas e colunas (que formam uma grade ou grid). É possível usar a unidade de medida PIXEL, para tamanhos fixos, porém, em grids, é muito comum o uso da unidade de medida "fr", que possibilita um comportamento relativo, uma vez que foi projetada para esse fim. Na estrutura de grades é possível fazer o controle de alinhamento, Controle de conteúdo sobreposto, usando para isso a propriedade "z-index". Grid é um recurso poderoso quando combinada com CSS.
+
+DIVISÕES
+
+O bloco "div" é usado para especificar um elemento de divisão, trata-se de um container genérico dentro do site. De certa forma não representa nada visual, é usado para agrupar itens do documento com a finalidade de estilos, , usando para isso: class ou ids.

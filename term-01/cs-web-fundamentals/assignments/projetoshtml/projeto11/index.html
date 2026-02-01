@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Indice TIOBE</title>
+
+    <style>
+        /* html{
+            font-size: 62.5px;
+        } */
+
+        h2,
+        h3 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: left;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #tabela-container {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid O#ccc;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        th,
+        td {
+            font-family: Arial;
+            font-size: 1.1em;
+            border: 1px solid #999;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #144284;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ÍNDICE TIOBE</h2>
+    <h3>Linguagens mais usadas (Abril de 2025)</h3>
+    <p>Segundo TIOBE, em 2025, o mundo das linguagens de programação já se encontra em fase de consolidação. As 20
+        principais linguagens usadas ao redor do mundo correspondem atualmente 83,56% do mercado total, segundo TIOBE,
+        um número muito alto, isso porque o mercado está na defensiva, ou seja, está voltado mais para tecnologias que
+        ganharam solidez ao longo dos anos.</p><br>
+
+    <div id="tabela-container"></div>
+    <script>
+        const tabelaHTMl = `
+        <table>
+            <thead>
+                <tr>
+                    <th>Classificação</th>
+                    <th>Nome</th>
+                    <th>Percentual</th>
+                </tr>         
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Python A</td>
+                    <td>23.08%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>C++</td>
+                    <td>10.33%</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Python A</td>
+                    <td>23.08%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td>9.94%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Java</td>
+                    <td>9.63%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>C#</td>
+                    <td>4.39%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Javascript</td>
+                    <td>3.71%</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Go</td>
+                    <td>3.02%</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Visual Basic</td>
+                    <td>2.94%%</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Delphi/Object Pascal</td>
+                    <td>2.53%</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>SQL</td>
+                    <td>2.19%</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Fortran</td>
+                    <td>2.04%</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Scratch</td>
+                    <td>1.35%</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>PHP</td>
+                    <td>1.31%</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>R</td>
+                    <td>1.19%</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Ada</td>
+                    <td>1.09%</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>MATLAB</td>
+                    <td>1.07%</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Assembly</td>
+                    <td>0.97%</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Rust</td>
+                    <td>0.96%</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Perl</td>
+                    <td>0.91%</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Cobol</td>
+                    <td>0.91%</td>
+                </tr>
+            </tbody>
+        </table>
+        `;
+        document.getElementById("tabela-container").innerHTML = tabelaHTMl;
+    </script>
+    <br>
+
+    <footer>
+        <h4>SOBRE A TIOBE</h4>
+        <p>A TIOBE é uma organização voltada para a qualidade de software. A TIOBE é responsável em verificar mais de 1
+            bilhão de linhas de código de software diários para seus clientes ao redor do mundo. A TIOBE foi fundada em
+            1º
+            de outubro de 2000 por Paul Jansen. O nome TIOBE significa The Importance Of Being Earnest, "A Importância
+            de
+            Ser Sincero". Esta frase é também é o nome de uma peça escrita por Oscar Wilde no final do século XIX.</p>
+        <p>Click aqui para acessar TIOBE Index:
+            <a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
