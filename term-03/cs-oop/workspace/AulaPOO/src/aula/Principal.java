@@ -9,11 +9,11 @@ public class Principal {
         Pessoa aluno = new Pessoa();
         aluno.nome = "Leonardo";
         aluno.matricula = aluno.calcularMatricula(65);
+        aluno.endereco = new Endereco("Av. do Contorno", 6061, "Sao Pedro");
         System.out.println(aluno);
 
-        // CO
-        Pessoa professor = new Pessoa("Leonardo", 12345);
-        professor.nome = "Leonardo";
+        Endereco endProfessor = new Endereco("Rua Mangas", 200, "Mangabeiras");
+        Pessoa professor = new Pessoa("Leonardo", 12345, endProfessor);
         System.out.println(professor);
     }
 }
