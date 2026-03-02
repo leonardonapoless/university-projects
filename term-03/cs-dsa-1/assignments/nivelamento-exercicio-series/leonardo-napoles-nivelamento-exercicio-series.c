@@ -1,4 +1,5 @@
 //// Leonardo Nápoles
+#include <ctype.h>
 #include <stdio.h>
 
 int lerNumTermos();
@@ -17,29 +18,26 @@ int main(){
                "D) Finalizar programa\n"
                "Escolha uma opcao: ");
         scanf(" %c", &opt);
+        opt = toupper(opt);
 
         switch (opt) {
             case 'A':
-            case 'a':
                 serieA();
                 break;
             case 'B':
-            case 'b':
                 serieB();
                 break;
             case 'C':
-            case 'c':
                 serieC();
                 break;
             case 'D': 
-            case 'd':
                 printf("Programa finalizado. Ate mais!\n");
                 break;
             default:
                 printf("Erro: opcao invalida. Tente novamente.\n");
         }
 
-    } while (opt != 'D' && opt != 'd');
+    } while (opt != 'D');
 
     return 0;
 }
