@@ -2,8 +2,8 @@ package aula;
 
 public class Pessoa {
     // Attributes
-    public String nome;
-    public int matricula = 1226;
+    private String nome;
+    public int matricula;
     public boolean ativo;
     public Endereco endereco;
 
@@ -23,6 +23,30 @@ public class Pessoa {
     }
 
     // Methods
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public boolean isAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(boolean ativo) {
+        this.ativo = ativo;
+    }
+
     @Override
     public String toString() {
         return "Pessoa [nome=" + nome + ", matricula=" + matricula + ", ativo=" + ativo + " , endereco=" + endereco
