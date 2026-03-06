@@ -1,6 +1,4 @@
 #define GL_SILENCE_DEPRECATION
-#define GLFW_INCLUDE_GLCOREARB 
-#include <iostream>
 #include <GLFW/glfw3.h>
 
 const char *vertexShaderSource = "#version 330 core\n" 
