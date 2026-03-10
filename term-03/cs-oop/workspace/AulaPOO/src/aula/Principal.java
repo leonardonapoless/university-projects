@@ -24,15 +24,17 @@ public class Principal {
             if (matricula <= 0) {
                 System.out.println("Erro! Matricula invalida!\n");
             } else {
-                aluno.setMatricula(matricula);
+                aluno.setMatricula(aluno.calcularMatricula(matricula));
             }
         } while (nome.trim().isEmpty() && matricula <= 0);
 
-        aluno.endereco = new Endereco("Av. do Contorno", 6061, "Sao Pedro");
+//        aluno.getEnd().setRua("Av. do Contorno");
+        aluno.setEnd(new Endereco("Av. do Contorno", 6061, "Sao Pedro"));
         System.out.println(aluno);
 
         Endereco endProfessor = new Endereco("Rua Mangas", 200, "Mangabeiras");
         Pessoa professor = new Pessoa("Bob Ross", 12345, endProfessor);
+        professor.setMatricula(professor.calcularMatricula(matricula));
         System.out.println(professor);
     }
 }

@@ -3,9 +3,9 @@ package aula;
 public class Pessoa {
     // Attributes
     private String nome;
-    public int matricula;
-    public boolean ativo;
-    public Endereco endereco;
+    private int matricula;
+    private boolean ativo;
+    private Endereco end;
 
     // Constructor
     public Pessoa() {
@@ -13,16 +13,16 @@ public class Pessoa {
         System.out.println("Construiu da Object.");
     }
 
-    public Pessoa(String nome, int matricula, Endereco endereco) {
+    public Pessoa(String nome, int matricula, Endereco end) {
         super();
-        this.nome = nome;
-        this.matricula = matricula;
-        this.ativo = true;
-        this.endereco = endereco;
+        this.setNome(nome);
+        this.setMatricula(this.calcularMatricula(matricula));
+        this.setAtivo(false);
+        this.setEnd(end);
         System.out.println("Construiu da pessoa.");
     }
 
-    // Methods
+    // Getters and Setters
     public String getNome() {
         return nome;
     }
@@ -47,9 +47,23 @@ public class Pessoa {
         this.ativo = ativo;
     }
 
+    public Endereco getEnd() {
+        return end;
+    }
+
+    public void setEnd(Endereco end) {
+        this.end = end;
+    }
+
+
+
+
     @Override
     public String toString() {
-        return "Pessoa [nome=" + nome + ", matricula=" + matricula + ", ativo=" + ativo + " , endereco=" + endereco
+        return "Pessoa [nome=" + nome +
+                ", matricula=" + matricula
+                + ", Cadastro ativo=" + (ativo ? "Sim" : "Não")+
+                " , end=" + end
                 + "]";
     }
 

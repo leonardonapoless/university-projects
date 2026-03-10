@@ -7,9 +7,9 @@ public class Endereco {
 
     public Endereco(String rua, int numero, String bairro) {
         super();
-        this.rua = rua;
-        this.numero = numero;
-        this.bairro = bairro;
+        this.setRua(rua);
+        this.setNumero(numero);
+        this.setBairro(bairro);
     }
 
     public String getRua() {
@@ -17,7 +17,10 @@ public class Endereco {
     }
 
     public void setRua(String rua) {
-        this.rua = rua;
+        if (rua.isBlank())
+            System.out.println("Rua vazia. Digite novamente.");
+        else
+            this.rua = rua;
     }
 
     public int getNumero() {
@@ -25,7 +28,10 @@ public class Endereco {
     }
 
     public void setNumero(int numero) {
-        this.numero = numero;
+        if (numero < 0)
+            System.out.println("Número inválido, não pode ser negativo. Digite Novamente!");
+        else
+            this.numero = numero;
     }
 
     public String getBairro() {
@@ -38,6 +44,10 @@ public class Endereco {
 
     @Override
     public String toString() {
-        return "Endereco [rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + "]";
+        return "Endereco{" +
+                "rua='" + rua + '\'' +
+                ", numero=" + numero +
+                ", bairro='" + bairro + '\'' +
+                '}';
     }
 }
